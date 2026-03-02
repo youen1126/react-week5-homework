@@ -1,5 +1,3 @@
-
-
 // 預設匯出（沒有名字）一個檔案只能有一個預設匯出
 //匯入到其他檔案時，可以在那個檔案再命名，因為預設匯出它沒有名字
 
@@ -8,7 +6,7 @@
 
 //以下範例練習
 export default function fn() {
-    console.warn('卡斯柏');
+  console.warn("卡斯柏");
 }
 
 //具名匯出。匯出時必須要有名字
@@ -18,8 +16,8 @@ export default function fn() {
 //通常是函式庫才會用具名匯出，初學應該比較不會去用
 //以後如果想寫簡單的函示庫，就可以用
 
-export const myName = '尤莉雅'
+export const myName = "尤莉雅";
 
 export function fnMyName() {
-    console.warn('尤莉雅讚讚');
+  console.warn("尤莉雅讚讚");
 }

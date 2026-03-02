@@ -1,8 +1,8 @@
-//主控layout 放header、footer
+//後台layout
 
 import { Outlet, NavLink } from "react-router";
 
-export default function FrontendLayout() {
+export default function AdminLayout() {
   return (
     <>
       <header
@@ -14,23 +14,13 @@ export default function FrontendLayout() {
       >
         <ul className="nav">
           <li className="nav-item">
-            <NavLink className="nav-link" to="/">
-              Home
+            <NavLink className="nav-link" to="/admin/product">
+              後台管理商品列
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/product">
-              商品列表
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink className="nav-link" to="/cart">
-              購物車
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink className="nav-link" to="/checkout">
-              結帳
+            <NavLink className="nav-link" to="/admin/order">
+              後台管理訂單列
             </NavLink>
           </li>
           <li className="nav-item">
@@ -52,6 +42,7 @@ export default function FrontendLayout() {
           backgroundColor: "#737c75",
         }}
       >
+        <p className="text-center p-4">後台footer</p>
         <p className="text-center p-4">© 2026 React專班-UN個人作業網站</p>
       </footer>
     </>

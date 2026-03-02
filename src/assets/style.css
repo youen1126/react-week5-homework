@@ -1,109 +1,109 @@
 html,
 body {
-    font-family: "Cactus Classical Serif", serif;
-    font-weight: 700;
-    height: 100%;
-    text-align: center;
-    background-color: #493c33;
+  font-family: "Cactus Classical Serif", serif;
+  font-weight: 700;
+  height: 100%;
+  text-align: center;
+  background-color: #493c33;
 }
 
 .login {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .form-signin {
-    width: 100%;
-    max-width: 330px;
-    padding: 15px;
-    margin: auto;
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
 }
 
 img {
-    object-fit: contain;
-    max-width: 100%;
+  object-fit: contain;
+  max-width: 100%;
 }
 
 .primary-image {
-    height: 300px;
+  height: 300px;
 }
 
 .images {
-    height: 150px;
+  height: 150px;
 }
 
 .table-wrapper {
-    background: white;
-    border-radius: 6px;
-    padding: 15px;
-    overflow: hidden;
+  background: white;
+  border-radius: 6px;
+  padding: 15px;
+  overflow: hidden;
 }
 
 .btn-un {
-    background-color: #e1e1df;
+  background-color: #e1e1df;
 }
 
 .btn-un:hover {
-    background: #737c75;
-    color: #fff;
-    transform: translateY(-1px);
+  background: #737c75;
+  color: #fff;
+  transform: translateY(-1px);
 }
 
 .btn-un:active {
-    background: #c5ab89;
-    transform: translateY(-1px);
+  background: #c5ab89;
+  transform: translateY(-1px);
 }
 
 .btn-un-produck {
-    background-color: #ab8c83;
-    color: #fff;
+  background-color: #ab8c83;
+  color: #fff;
 }
 
 .btn-un-produck:hover {
-    background: #c5ab89;
-    transform: translateY(-1px);
+  background: #c5ab89;
+  transform: translateY(-1px);
 }
 
 .btn-un-produck:active {
-    background: #c5ab89;
-    transform: translateY(-1px);
+  background: #c5ab89;
+  transform: translateY(-1px);
 }
 
 .btn-un-danger {
-    background-color: #965454;
+  background-color: #965454;
 }
 
 /* Navbar 文字顏色 */
 .nav-link {
-    color: #f1ebcc !important;
+  color: #f1ebcc !important;
 }
 
 /* hover 狀態 */
 .nav-link:hover {
-    color: #ffffff !important;
+  color: #ffffff !important;
 }
 
 /* 目前頁面（active） */
 .nav-link.active {
-    color: #f2a72d !important;
-    font-weight: 600;
+  color: #f2a72d !important;
+  font-weight: 600;
 }
 
 .un-container {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .login-loading {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    z-index: 9999;
+  z-index: 9999;
 }

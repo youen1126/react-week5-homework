@@ -6,46 +6,58 @@ import SingleProduct from "./views/front/SingleProduct";
 import Cart from "./views/front/Cart";
 import Checkout from "./views/front/Checkout";
 import Login from "./views/Login";
-import Back from "./views/Back";
+import AdminLayout from "./layout/AdminLayout";
+import AdminProducts from "./views/admin/AdminProducts";
+import AdminOrders from "./views/admin/AdminOrders";
 import NotFound from "./views/front/NotFound";
 
 export const router = createHashRouter([
-    {
-        path: '/',
-        element: <FrontendLayout />,
-        children: [
-            {
-                index: true,
-                element: <Home />
-            },
-            {
-                path: '/product',
-                element: <Products />
-            },
-            {
-                path: '/product/:id',
-                element: <SingleProduct />
-            },
-            {
-                path: '/checkout',
-                element: <Checkout />
-            },
-            {
-                path: '/cart',
-                element: <Cart />
-            },
-            {
-                path: '/login',
-                element: <Login />
-            },
-            {
-                path: "/back",
-                element: <Back />,
-            },
-            {
-                path: "*",
-                element: <NotFound />,
-            }
-        ]
-    },
+  {
+    path: "/",
+    element: <FrontendLayout />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: "/product",
+        element: <Products />,
+      },
+      {
+        path: "/product/:id",
+        element: <SingleProduct />,
+      },
+      {
+        path: "/checkout",
+        element: <Checkout />,
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
+      },
+    ],
+  },
+  {
+    path: "admin",
+    element: <AdminLayout />,
+    children: [
+      {
+        path: "product",
+        element: <AdminProducts />,
+      },
+      {
+        path: "order",
+        element: <AdminOrders />,
+      },
+    ],
+  },
 ]);
